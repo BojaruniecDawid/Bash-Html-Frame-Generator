@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo File name : 
+read name 
+
+touch $name.html
+cat <<EOT>> $name.html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Your title</title>
+    <link rel="stylesheet" href="style.css"
+    <meta name="description" content="..."
+</head>
+<body>
+
+    Some content of the document....
+</body>
+
+</html>
+
+EOT
+
+
